@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deen's Project</title>
+  </head>
+
+  <style>
+    body {
+      background: radial-gradient(
+        circle at 7.5% 24%,
+        rgb(237, 161, 193) 0%,
+        rgb(250, 178, 172) 25.5%,
+        rgb(190, 228, 210) 62.3%,
+        rgb(215, 248, 247) 93.8%
+      );
+    }
+
+    .container {
+      margin: 0 auto;
+      display: block;
+      background-color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 20px 10px;
+      /*max-width: 600px 100px;*/
+      width: 50%;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #f76b8a;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: "Times New Roman", Times, serif;
+      color: #66bfbf;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 20px;
+      box-shadow: 20px;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 10px;
+      font-size: 20px;
+      transition: 200ms all ease-in-out;
+      border: none;
+      border-radius: 15px;
+      color: #eaf6f6;
+      background-color: #f76b8a;
+    }
+
+    button:hover {
+      cursor: pointer;
+      color: #f76b8a;
+      background-color: #eaf6f6;
+    }
+
+    p {
+      line-height: 1.5;
+      margin: 0 0 1em o;
+      font-size: medium;
+    }
+
+    a {
+      color: #66bfbf;
+    }
+
+    a:hover {
+      cursor: pointer;
+      color: #f76b8a;
+    }
+
+    .footer {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+
+    span {
+      color: #f76b8a;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <h1>My favourite Starbucks Iced Coffee</h1>
+      <h2>I love Starbuck Frappuccino!❤️</h2>
+
+      <img
+        src="https://www.groundstobrew.com/wp-content/uploads/2021/11/starbucks-peppermint-mocha-frappuccino.jpg"
+        alt=""
+        width="300"
+      />
+
+      <p>
+        Frappuccino® Roast coffee, mocha sauce and Frappuccino® chips blended
+        with milk and ice, layered on top of whipped cream and chocolate cookie
+        crumble and topped with vanilla whipped cream, mocha drizzle and even
+        more chocolate cookie crumble. Each sip is as good as the last . . . all
+        the way to the end.
+      </p>
+
+      <p>
+        Frappuccino is a line of blended iced coffee drinks sold by Starbucks.
+        It consists of coffee or crème base, blended with ice and ingredients
+        such as flavored syrups and usually topped with whipped cream and or
+        spices. Frappuccinos are also sold as bottled coffee beverages in
+        grocery stores, convenience stores and from vending machines.
+      </p>
+
+      <a href="https://www.starbucks.com/menu/product/956/iced"
+        >Learn More at the Starbucks Website</a
+      >
+
+      <button>🍹Get Yours Too!</button>
+
+      <p class="footer">This website was created by <span>Geraldine</span>.</p>
+    </div>
+    <script>
+      function order() {
+        let name = prompt("What is your name?");
+        let emoji = prompt("What is your favourite emoji?");
+        let coffee = prompt("What is your favourite iced coffee?");
+
+        alert(
+          "Welcome " +
+            name +
+            ", Your favourite Iced Coffee is " +
+            coffee +
+            "! " +
+            emoji +
+            " Which is delicious!"
+        );
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", order);
+    </script>
+  </body>
+</html>
